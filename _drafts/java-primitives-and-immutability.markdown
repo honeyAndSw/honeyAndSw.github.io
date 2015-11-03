@@ -29,3 +29,5 @@ thread-safe하고 동시성 문제를 피할 수 있다.
 ### 참고한 자료들
 - [Memory Representation of Primitive Values and Objects](http://www.cs.unc.edu/~dewan/comp401/s09/Class%20Notes/8_Pointers_Notes.pdf)
 - [Are Java primitives immutable?](http://stackoverflow.com/questions/18037082/are-java-primitives-immutable)
+- [Mutable and Immutable Objects](http://www.javaranch.com/journal/2003/04/immutable.htm)
+- [The Laws of Reflection](http://blog.golang.org/laws-of-reflection)
