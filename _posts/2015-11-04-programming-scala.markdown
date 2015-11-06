@@ -15,3 +15,9 @@ Programming Scala를 읽고 있다.
 - `test-double` xUnit Test Patterns: Refactoring Test Code
 - Recall Java’s static methods and fields are not tied to an actual instance of some type, whereas Scala objects are single instances of a type.
 - `interpolation` from Scala 2.10
+
+### Type Less, Do More
+2.5 Method Declarations
+  2.5.4 Nesting Method Definitions and Recursion
+
+- The JVM and many other language enviorinments don't do tail-call optimizations, which would convert a tail-recursive function into a loop. ... Hence, the Scala compiler does limited tail-call optimizations itself.  
