@@ -8,7 +8,6 @@ Programming Scala를 읽고 있다.
 따로 찾아보면 좋을 개념들은 따로 정리해둔다.
 
 ### Zero to Sixty: Introducing Scala
-1.3 A Taste of Scala
 
 - `$javap` reverse engineering
 - `function literal` = anonymous function = lambda, closure, block, proc, ...
@@ -16,3 +15,12 @@ Programming Scala를 읽고 있다.
 - Recall Java’s static methods and fields are not tied to an actual instance of some type, whereas Scala objects are single instances of a type.
 - `interpolation`
    - [String Interpolation](http://docs.scala-lang.org/overviews/core/string-interpolation.html)
+
+### Type Less, Do More
+- 2.5.4 Nesting Method Definitions and Recursion
+  - The JVM and many other language enviorinments don't do tail-call optimizations, which would convert a tail-recursive function into a loop. ... Hence, the Scala compiler does limited tail-call optimizations itself.
+- `diamond operator` in Java 7
+- `Subtype Polymorphism` 하위 타입 다형성, 또는 상속(Inheritance)
+- 2.9 Option, Some, and None: Avoiding nulls
+  - But this is a confusing choice on the language designer's part. Why return a keyword when the programmer expects an instance of a type?
+  - Tony Hoarce, who invented the null reference in 1965 while working on a language called ALGOL W, called its invention his "billion dollar" mistake.
