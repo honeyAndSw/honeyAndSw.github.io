@@ -14,4 +14,5 @@ Programming Scala를 읽고 있다.
 - `function literal` = anonymous function = lambda, closure, block, proc, ...
 - `test-double` xUnit Test Patterns: Refactoring Test Code
 - Recall Java’s static methods and fields are not tied to an actual instance of some type, whereas Scala objects are single instances of a type.
-- `interpolation` from Scala 2.10
+- `interpolation`
+   - [String Interpolation](http://docs.scala-lang.org/overviews/core/string-interpolation.html)
