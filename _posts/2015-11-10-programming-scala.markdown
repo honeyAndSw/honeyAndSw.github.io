@@ -7,6 +7,8 @@ date: 2015-11-10
 Programming Scala를 읽고 있다.   
 따로 찾아보면 좋을 개념들은 따로 정리해둔다.
 
+<br>
+ 
 ### Zero to Sixty: Introducing Scala
 
 - `$javap` reverse engineering
@@ -16,9 +18,13 @@ Programming Scala를 읽고 있다.
 - `interpolation`
    - [String Interpolation](http://docs.scala-lang.org/overviews/core/string-interpolation.html)
 
+<br>
+
 ### Type Less, Do More
 - 2.5.4 Nesting Method Definitions and Recursion
-  - The JVM and many other language enviorinments don't do tail-call optimizations, which would convert a tail-recursive function into a loop. ... Hence, the Scala compiler does limited tail-call optimizations itself.
+  - The JVM and many other language enviorinments don't do **tail-call optimizations**, which would convert a tail-recursive function into a loop. ... Hence, the Scala compiler does limited tail-call optimizations itself.
+  - [Why does the JVM still not support tail-call optimization?](http://stackoverflow.com/questions/3616483/why-does-the-jvm-still-not-support-tail-call-optimization/3682044#3682044)
+  - [클로저 함수형 프로그래밍의 6가지 원칙](http://autonomist.tistory.com/20)
 - `diamond operator` in Java 7
 - `Subtype Polymorphism` 하위 타입 다형성, 또는 상속(Inheritance)
 
@@ -32,4 +38,8 @@ Programming Scala를 읽고 있다.
 - 2.9 Option, Some, and None: Avoiding nulls
   - But this is a confusing choice on the language designer's part. Why return a keyword when the programmer expects an instance of a type?
   - Tony Hoarce, who invented the null reference in 1965 while working on a language called ALGOL W, called its invention his "billion dollar" mistake.
+
+<br>
+
+### Rounding Out the Basics
 - Use a `for comprehension` when you need to test whether an Option is a Some, in which case you do some work, or is a None, in which case you ignore it.
