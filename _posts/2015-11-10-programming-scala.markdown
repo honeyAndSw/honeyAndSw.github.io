@@ -42,4 +42,26 @@ Programming Scala를 읽고 있다.
 <br>
 
 ### Rounding Out the Basics
+- 1 + 2 vs. 1.+(2)
+: infix notation = 인자가 하나뿐인 메서드의 경우 마침표와 괄호 생략
+- 1 to String vs. 1.toString
+: postfix notation = 인자가 없는 메서드는 마침표 없이 호출 가능 (선택적) 
 - Use a `for comprehension` when you need to test whether an Option is a Some, in which case you do some work, or is a None, in which case you ignore it.
+- `by-name parameter`
+   - a function that we call without parentheses
+   - defer evaluation until later
+   - 예제 from [Occasional Coder](http://locrianmode.blogspot.kr/2011/07/scala-by-name-parameter.html)
+{% highlight scala %}
+def nano() = {
+  println("Getting nano")
+  System.nanoTime
+}
+
+def delayed(t: => Long) = {
+  println("In delayed method")
+  println("Param: "+t)
+  t
+}
+
+delayed(nano())
+{% endhighlight %}
