@@ -48,16 +48,15 @@ s1은 **바뀌어야 하기 때문에** s1의 레퍼런스는 바뀌었지만, s
 
 primitive type에 대해 immutability를 논하지 않는 다는 것은 잘 안다. 위처럼 immutability를 자연스럽게 받아들이고 메모리 할당을 이해하게 되면, 너무 당연한 소리라서 아무도 논하지 않는 것 같다. 결국 나만 모르고 있었다는 뜻 ㅠㅠ
 
-`int i = 5;` 가 실행되면 메모리에 5가 들어가는지 생각해본 적 있는지?
+`int i = 5;` 가 실행되면 어떻게 메모리에 5가 들어가는지 생각해본 적 있는지?
 
 <img src="/assets/storing_integer_in_memory.png" style="width: 50%;"/>
 
 1. int형이 들어갈 수 있는 두 개의 메모리 블럭을 할당한다.
-: 하나는 i를 위한 variable block이고, 또 하나는 5를 가진 value block이다.
-2. value block의 값을 variable block 복사한다.
+<br> 하나는 i를 위한 variable block이고, 또 하나는 5를 가진 value block이다.
+2. value block의 값을 variable block 에 복사한다.
 
-이것은 흐름이 얼마나... 새로 정의한 immutability와 너무 일맥상통한지! primitive type은 immutable할 수 밖에 없는 것이다!   
-이 글을 읽는 사람이 얼마나 될지는 모르겠지만, 혹시나 있다면 내 깨달음을 100% 전달하지 못해서 아쉬울 뿐이다.   
+이것은 흐름이 얼마나... 새로 정의한 immutability와 너무 일맥상통한지! primitive type은 immutable한 것은 너무 당연해서 어찌할 수 없는 그런 것. ~허무~
 
 아직 모르는게 너무 많다. 속속들이 다 알고 남들처럼 멋있게 글도 쓰고 싶은데.
 
