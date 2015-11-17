@@ -69,9 +69,24 @@ delayed(nano())
 <br>
 
 ### Pattern Matching
-- `+:` cons(construction) operator for sequences vs. `::` cons operator for lists
-<br>라고 책에 나와있지만... Scala docs를 보면 좀 다른 것 같다. 예제까지 볼 수 있으므로 문서를 참고한다.
+- construction과 extraction의 구문을 일치시키기 위해 +: 는 다음 두 가지일 수 있다.
+  - `Seq의 메서드로써의 +:`
+  <br>A copy of the sequence/list with an element prepended. [Seq](http://www.scala-lang.org/api/current/#scala.collection.Seq)
+  - {% highlight scala %}
+scala> val list = 1 +: 2 +: 3 +: 4 +: Nil
+list: List[Int] = List(1, 2, 3, 4)
+{% endhighlight %}
 
-> `+:` A copy of the sequence/list with an element prepended.   
-> `::` Adds an element at the beginning of this list.   
-> Docs - [Seq](http://www.scala-lang.org/api/current/#scala.collection.Seq), [List](http://www.scala-lang.org/api/current/#scala.collection.immutable.List)
+  - `singleton object인 +:`
+  <br>An extractor used to head/tail deconstruct sequences. [object +:](http://www.scala-lang.org/api/current/#scala.collection.$plus$colon$)
+  - {% highlight scala %}
+list1: Seq[Int] = List(1, 2, 3, 4)
+scala> val list1 = Seq(1, 2, 3, 4)
+     | list1 match {
+     | case head +: tail => // equal to... +:(head, tail)
+     | printf("head:%s, tail:%s", head, tail) }
+head:1, tail:List(2, 3, 4)
+{% endhighlight %}
+
+- `case` keyword used for declaring "special" classes and for case expressions in match expressions.
+<br>case classes --> case expressions --> pattern matching
