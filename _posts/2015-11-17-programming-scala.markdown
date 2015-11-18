@@ -28,10 +28,10 @@ Programming Scala를 읽고 있다.
 - `diamond operator` in Java 7
 - `Subtype Polymorphism` 하위 타입 다형성, 또는 상속(Inheritance)
 
-> Polymorphism(다형성) 하나의 메소드나 클래스가 다양한 방법으로 동작하는 것.   
-> - Ad hoc polymorphism => function overloading   
-> - Parametric polymorphism => generics   
-> - Subtyping
+  > Polymorphism(다형성) 하나의 메소드나 클래스가 다양한 방법으로 동작하는 것.   
+  > - Ad hoc polymorphism => function overloading   
+  > - Parametric polymorphism => generics   
+  > - Subtyping
 
 - A character with a Unicode value between 0 and 255 may also be represented by an octal escape, i.e., a backslash followed by a sequence of up to three octal characters.
 : **조엘 온 소프트웨어** 에 나오는 인코딩 관련 부분 다시 정독할 것.
@@ -43,7 +43,12 @@ Programming Scala를 읽고 있다.
 
 ### Rounding Out the Basics
 - 1 + 2 vs. 1.+(2)
-: infix notation = 인자가 하나뿐인 메서드의 경우 마침표와 괄호 생략
+  - `infix notation` = 인자가 하나뿐인 메서드의 경우 마침표와 괄호 생략
+  - 약간 헷갈리는데 메서드 뿐만 아니라 타입에도 적용할 수 있다. 타입을 메서드'처럼' 사용하도록 한 것.
+  - [<:<](http://www.scala-lang.org/api/current/#scala.Predef$$$less$colon$less)[A,B] is equivalent to A <:< B
+
+  > If you define a **higher-kinded type** with two type parameters, you can then use that type name as an infix type operator. [(Scala Type Infix Operators)](http://jim-mcbeath.blogspot.kr/2008/11/scala-type-infix-operators.html)
+
 - 1 to String vs. 1.toString
 : postfix notation = 인자가 없는 메서드는 마침표 없이 호출 가능 (선택적)
 - Use a `for comprehension` when you need to test whether an Option is a Some, in which case you do some work, or is a None, in which case you ignore it.
@@ -51,18 +56,15 @@ Programming Scala를 읽고 있다.
    - a function that we call without parentheses
    - defer evaluation until later
    - 예제 from [Occasional Coder](http://locrianmode.blogspot.kr/2011/07/scala-by-name-parameter.html)
-{% highlight scala %}
+   - {% highlight scala %}
 def nano() = {
-  println("Getting nano")
-  System.nanoTime
+    println("Getting nano")
+    System.nanoTime
 }
-
 def delayed(t: => Long) = {
-  println("In delayed method")
-  println("Param: "+t)
-  t
+    println("In delayed method. Param:"+t)
+    t
 }
-
 delayed(nano())
 {% endhighlight %}
 
