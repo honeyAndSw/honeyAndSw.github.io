@@ -23,8 +23,8 @@ Programming Scala를 읽고 있다.
 ### Type Less, Do More
 - 2.5.4 Nesting Method Definitions and Recursion
   - The JVM and many other language enviorinments don't do **tail-call optimizations**, which would convert a tail-recursive function into a loop. ... Hence, the Scala compiler does limited tail-call optimizations itself.
-  - [Why does the JVM still not support tail-call optimization?](http://stackoverflow.com/questions/3616483/why-does-the-jvm-still-not-support-tail-call-optimization/3682044#3682044)
-  - [클로저 함수형 프로그래밍의 6가지 원칙](http://autonomist.tistory.com/20)
+  - <b style="color:red">!!!!!!</b> [Why does the JVM still not support tail-call optimization?](http://stackoverflow.com/questions/3616483/why-does-the-jvm-still-not-support-tail-call-optimization/3682044#3682044)
+  - <b style="color:red">!!!!!!</b> [클로저 함수형 프로그래밍의 6가지 원칙](http://autonomist.tistory.com/20)
 - `diamond operator` in Java 7
 - `Subtype Polymorphism` 하위 타입 다형성, 또는 상속(Inheritance)
 
@@ -34,7 +34,7 @@ Programming Scala를 읽고 있다.
   > - Subtyping
 
 - A character with a Unicode value between 0 and 255 may also be represented by an octal escape, i.e., a backslash followed by a sequence of up to three octal characters.
-: **조엘 온 소프트웨어** 에 나오는 인코딩 관련 부분 다시 정독할 것.
+: <b style="color:red">!!!!!!</b> **조엘 온 소프트웨어** 에 나오는 인코딩 관련 부분 다시 정독할 것.
 - 2.9 Option, Some, and None: Avoiding nulls
   - But this is a confusing choice on the language designer's part. Why return a keyword when the programmer expects an instance of a type?
   - Tony Hoarce, who invented the null reference in 1965 while working on a language called ALGOL W, called its invention his "billion dollar" mistake.
@@ -92,3 +92,17 @@ head:1, tail:List(2, 3, 4)
 
 - `case` keyword used for declaring "special" classes and for case expressions in match expressions.
 <br>case classes --> case expressions --> pattern matching
+
+<br>
+
+### Implicits
+- `implicit conversion`을 사용하면, 다른 부분을 건드리지 않고도 새로운 함수를 추가할 수 있다!   
+: 즉, Expression Problem을 해결할 수 있다.
+  - `Expression Problem` the desire to extend modules without editing their source code
+  - OOP에서는 상속으로 이 문제를 해결한다. & [Open/Closed Principle](https://ko.wikipedia.org/wiki/%EA%B0%9C%EB%B0%A9-%ED%8F%90%EC%87%84_%EC%9B%90%EC%B9%99)   
+  ==> 하지만, 사용하지 않는 코드가 남아있거나 부모의 변화가 모든 자식에게 영향을 미칠 수 있는 문제가 있다.   
+  ==> 그래서 나온 것이 `Single Responsibility Principle` 하나의 관심사를 유지시켜!   
+  ==> 하지만(2)! 실제로는 두 가지 클래스를 '믹스'해야 하는 경우가 많이 생긴다.  
+  ==> 이럴 때는 Scala에서는 `trait`를 사용하자.
+  - *metaprogramming* 을 대신해서는, **typed class** 를 사용한다.
+  - <b style="color:red">!!!!!!</b> [The SOLID Principles](http://code.tutsplus.com/series/the-solid-principles--cms-634)
