@@ -68,6 +68,8 @@ def delayed(t: => Long) = {
 delayed(nano())
 {% endhighlight %}
 
+- `trait` interfaces that also give you the option of defining the methods you declare.
+
 <br>
 
 ### Pattern Matching
