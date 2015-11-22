@@ -108,3 +108,21 @@ head:1, tail:List(2, 3, 4)
   ==> 이럴 때는 Scala에서는 `trait`를 사용하자.
   - *metaprogramming* 을 대신해서는, **typed class** 를 사용한다.
   - <b style="color:red">!!!!!!</b> [The SOLID Principles](http://code.tutsplus.com/series/the-solid-principles--cms-634)
+
+<br>
+
+### Functional Programming in Scala
+- FP offers effective techniques for three major challenges of our time:
+  - the need for pervasive concurrency (Immutability와 강하게 연결된다.)
+  - the need to write data-centric applications
+  <br>요즘 유명한 프로젝트로는 역시 Apache Spark인데 Scala를 지원한다.
+  - the need to write bug-free applications
+- **What Is Functional Programming?**
+  - `reference transparency`(참조투명성)
+
+  > An expression is said to be referentially transparent if it can be replaced with its value without changing the behavior of a program. (여기까지 잘 이해 안됨) In other words, yielding a program that has the same effects and output on the same input. [(wikipedia)](https://en.wikipedia.org/wiki/Referential_transparency)
+
+    - 참조투명성이 보장되면... 함수가 계산한 값을 다른 놈으로 대체할 수 있다.   
+    ==> 함수나 변수나 다루는게 또이또이!   
+    ==> Functions are `first-class value` in FP, just like data values.
+    - `higher-order function` 함수 파라미터를 받거나 함수를 리턴하는 함수
