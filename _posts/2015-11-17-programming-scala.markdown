@@ -126,3 +126,5 @@ head:1, tail:List(2, 3, 4)
     ==> 함수나 변수나 다루는게 또이또이!   
     ==> Functions are `first-class value` in FP, just like data values.
     - `higher-order function` 함수 파라미터를 받거나 함수를 리턴하는 함수
+- "It does encourage you to write your code this way whenever possible."
+- Although tail-call self-recursion optimizations are not yet supported natively by the JVM, scalac will attempt them.
