@@ -4,11 +4,20 @@ title: "유학을 준비하는 사람들에게"
 date: 2015-11-24
 ---
 
-귀가 가볍더라도 최대한 많은 사람들의 말을 들어봐야 하니까.
+- 귀가 가볍더라도 최대한 많은 사람들의 말을 들어봐야 하니까.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZXVap858qgw" frameborder="0" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Nw9-qJ6MCvw" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ZXVap858qgw" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Nw9-qJ6MCvw" frameborder="0" allowfullscreen></iframe>
 
 - CS분야 어드미션 받기 힘들어졌다.
 
-> 그줄어든 수만큼 중국/인도인이 증가하였습니다. 중국/인도인들은 학점 3.9,영어 거의 만점, 논문, 직장경력 3~4년 이정도는 기본으로 가지고 지원을 하기때문에  top10에서 어느곳도 안정적인 곳은 없다고 봐도 무방합니다.
+  > 그줄어든 수만큼 중국/인도인이 증가하였습니다. 중국/인도인들은 학점 3.9,영어 거의 만점, 논문, 직장경력 3~4년 이정도는 기본으로 가지고 지원을 하기때문에  top10에서 어느곳도 안정적인 곳은 없다고 봐도 무방합니다.
+
+- CMU 12-16 months Master's program
+
+  > I did it when GRE scores were out of 2400.
+I had 2280  - 98 percentile in Quant & English and a 95 percentile in Analytical.
+But we had people ranging from 1800 to 2300 in the Masters in Software Engineering course.
+My undergrad scores weren't great, but since the specific course gave a lot of weightage for work experience, it worked out for me.
+My Statement of Purpose (which was supposedly a key feature for acceptance) was born out of serious anguish from 1.5 years of badly managed software projects. :)   
+  > [(What scores in GRE get you an admission into the MS program at CMU? - quora)](https://www.quora.com/What-scores-in-GRE-get-you-an-admission-into-the-MS-program-at-CMU)
