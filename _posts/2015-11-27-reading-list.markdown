@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reading List"
-date: 2015-11-01 11:20:00
+date: 2015-11-27 11:20:00
 ---
 책이나 글이나 읽어야하는 것은 뭐든지.
 
@@ -16,6 +16,7 @@ date: 2015-11-01 11:20:00
 - 폴리글랏 프로그래밍
 - 브루스테이트의 세븐랭귀지
 - 실용주의 사고와 학습
+- The Art of Computer Programming
 - 혼수 대신 캐나다 유학 - 후회 없는 젊은 날의 선택
 - [Reactive Design Patterns](https://www.manning.com/books/reactive-design-patterns) > lascala slack에서 이야기나온 책
 - Nature of Code (자연계 법칙을 디지털 세계로 옮기는 컴퓨터 프로그래밍 전략)
