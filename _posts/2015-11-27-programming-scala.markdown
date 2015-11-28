@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Programming Scala"
-date: 2015-11-17
+date: 2015-11-27
 ---
 
 Programming Scala를 읽고 있다.   
@@ -13,6 +13,10 @@ Programming Scala를 읽고 있다.
 
 - `$javap` reverse engineering
 - `function literal` = anonymous function = lambda, closure, block, proc, ...
+- {% highlight java %}
+  (s:String) => s.toUpperCase()
+  {% endhighlight %}
+
 - `test-double` xUnit Test Patterns: Refactoring Test Code
 - Recall Java’s static methods and fields are not tied to an actual instance of some type, whereas Scala objects are single instances of a type.
 - `interpolation`
@@ -21,11 +25,11 @@ Programming Scala를 읽고 있다.
 <br>
 
 ### Type Less, Do More
-- 2.5.4 Nesting Method Definitions and Recursion
+- `partial functions` not defined for all possible inputs, defined only for those inputs that match at least one of case clauses.
+- Nesting Method Definitions and Recursion
   - The JVM and many other language enviorinments don't do **tail-call optimizations**, which would convert a tail-recursive function into a loop. ... Hence, the Scala compiler does limited tail-call optimizations itself.
   - <b style="color:red">!!!!!!</b> [Why does the JVM still not support tail-call optimization?](http://stackoverflow.com/questions/3616483/why-does-the-jvm-still-not-support-tail-call-optimization/3682044#3682044)
   - <b style="color:red">!!!!!!</b> [클로저 함수형 프로그래밍의 6가지 원칙](http://autonomist.tistory.com/20)
-- `diamond operator` in Java 7
 - `Subtype Polymorphism` 하위 타입 다형성, 또는 상속(Inheritance)
 
   > Polymorphism(다형성) 하나의 메소드나 클래스가 다양한 방법으로 동작하는 것.   
@@ -128,3 +132,4 @@ head:1, tail:List(2, 3, 4)
     - `higher-order function` 함수 파라미터를 받거나 함수를 리턴하는 함수
 - "It does encourage you to write your code this way whenever possible."
 - Although tail-call self-recursion optimizations are not yet supported natively by the JVM, scalac will attempt them.
+- "Functional programs put greater emphasis on the use of a core set of data structures and algorithms compared to object languages."
