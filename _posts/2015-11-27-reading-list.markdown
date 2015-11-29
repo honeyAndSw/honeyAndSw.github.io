@@ -9,6 +9,7 @@ date: 2015-11-27 11:20:00
 - Programming Scala, 2nd Edition
 - Programming in Scala: A Comprehensive Step-by-Step Guide, 2nd Edition by Martin Odersky
 : 이런 책 후기를 쓸 수 있었으면 좋겠다. [책 후기, Programming in Scala 2nd](http://seoh.github.io/blog/2015/01/18/pis-review/)
+- Scala for the Impatient
 
 ### 그리고
 - 소프트웨어 블로그 베스트 29선
@@ -19,6 +20,7 @@ date: 2015-11-27 11:20:00
 - The Art of Computer Programming
 - 혼수 대신 캐나다 유학 - 후회 없는 젊은 날의 선택
 - [Reactive Design Patterns](https://www.manning.com/books/reactive-design-patterns) > lascala slack에서 이야기나온 책
+- MapReduce Design Patterns
 - Nature of Code (자연계 법칙을 디지털 세계로 옮기는 컴퓨터 프로그래밍 전략)
 - 뉴욕의 프로그래머, 실리콘밸리 견문록, 구글은 sky를 모른다
 - [`읽고나서`](/2015/11/01/조엘-온-소프트웨어.html) *조엘 온 소프트웨어 - 유쾌한 오프라인 블로그*
