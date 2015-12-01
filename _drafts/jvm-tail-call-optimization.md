@@ -4,7 +4,11 @@ title: "Why does JVM not support tail-call optimization?"
 date: 2015-11-24
 ---
 
-공부해가면서 쓰는 Java Optimization.
+> Although tail-call self-recursion optimizations are not yet supported natively by the JVM, scalac will attempt them.
+
+이 한 줄 때문에 시작하게 된 공부해가면서 쓰는 Java Optimization.
+
+<br>
 
 ### JIT compiler의 도움이 필요해.
 [**Diagnosing Java Code: Improve the performance of your Java code**](http://web.archive.org/web/20120506085636/http://www.ibm.com/developerworks/java/library/j-diag8/index.html#code_block_1.0) 에 의하면, loop으로 바꾸는 간단해보이는 작업일지라도 정적 컴파일이 코드의 결과를 바꾸는 경우가 있다. 정적 컴파일러인 javac가 하기에는 상황에 따라 헷갈린다는 말씀.
@@ -74,7 +78,7 @@ class Example {
 Anything that changed the number of frames on the stack would break this and would cause an error.   
 > [(Why doesn't Java have optimization for tail-recursion at all?)](http://programmers.stackexchange.com/questions/272061/why-doesnt-java-have-optimization-for-tail-recursion-at-all)
 
-음. 질문부터 읽어보면 질문자는 나와 비슷한 글을 본 것 같다. "상속되면 이러쿵저러쿵 복잡할 수 있지만... static method는 상관없는거 아니야?" 그런데 답변을 보니까 잘 이해가 안 간다. stack이랑 도대체 무슨 상관이란 말인가! TCO가 일어나면 이 놈이 바뀌고 그래서 보안 문제가 생긴다 이건가?
+음. 질문부터 읽어보면 질문자는 나와 비슷한 글을 본 것 같다. "상속되면 이러쿵저러쿵 복잡할 수 있지만... static method는 상관없는거 아니야?" 그런데 답변을 보니까 잘 이해가 안 간다. stack이랑 도대체 무슨 상관이란 말인가! TCO가 일어나면 이 놈이 바뀌고 그래서 보안 문제가 생긴다?
 
 ### 참고
 - [JVM performance optimization, Part 1: A JVM technology primer](http://www.javaworld.com/article/2078623/core-java/jvm-performance-optimization-part-1-a-jvm-technology-primer.html)
