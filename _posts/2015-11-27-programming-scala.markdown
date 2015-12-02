@@ -135,3 +135,5 @@ head:1, tail:List(2, 3, 4)
 - **Tail Recursion Versus Traversals of Infinite Collections**
   - 어렵지만 이해하고 넘어가자.
   - Java8 stream과 recursion도 관계가 있나?
+- `structure sharing`과 `persistent data structure`
+  - https://en.wikipedia.org/wiki/Persistent_data_structure
