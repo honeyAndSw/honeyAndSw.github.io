@@ -137,3 +137,6 @@ head:1, tail:List(2, 3, 4)
   - Java8 stream과 recursion도 관계가 있나?
 - `structure sharing`과 `persistent data structure`
   - https://en.wikipedia.org/wiki/Persistent_data_structure
+- higher-order function은 `combinator`로 볼 수 있다.
+
+  > List(1, 2, 3) map squared라고 하면 squared 함수를 리스트의 모든 원소에 적용한 다음 새 리스트를 반환한다. 결과는 아마도 List(1, 4, 9)가 될 것이다. map과 같은 함수를 콤비네이터(combinator)라 부른다. [(Scala School - 컬렉션)](https://twitter.github.io/scala_school/ko/collections.html)
