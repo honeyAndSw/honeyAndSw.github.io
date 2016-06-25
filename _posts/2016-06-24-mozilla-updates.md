@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MDN 페이지 수정"
-date: 2016-06-24 00:04:00
+date: 2016-06-24
 ---
 
 MDN 자바스크립트 [표현과 연산자](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Expressions_and_Operators#Arithmetic_operators)를 읽다가 한국어 페이지 링크가 깨진 것을 발견했다.   
